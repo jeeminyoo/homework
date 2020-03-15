@@ -17,8 +17,113 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     
+    <style>
+        .all{
+            width: 500px;
+            margin: auto;
+        }
+
+        .input-group{
+            width: 500px;
+            margin: auto;
+            padding: 7px;
+        }
+        .button{
+            width: 500px;
+            margin: auto;
+            padding: 10px;
+        }
+
+        .image{
+            display: block;
+            overflow: hidden;
+            height: 350px;
+            width: 500px;
+            margin: auto;
+            background-image: url(https://img.29cm.co.kr/next-product/2020/01/20/7842f519f63a4efaa016d30bd8b78eb1_20200120112026.jpg?width=1000);
+            background-size: cover;
+                   }
+        .textdecoration1{
+            text-decoration: line-through;
+            color: gray;
+        }
+
+        .detail{
+            margin:20px 20px 30px 0px;
+        }
+
+
+        h1,h5 {
+        display: inline;
+        width: 500px;
+        }
+
+
+    </style>
+
   </head>
   <body>
-    <h1>Hello, world!</h1>
+
+    <div class="all">
+
+    <!--사진-->
+    <div class="image">
+    
+    </div>
+
+    <!--문구-->
+    <h3>블루체크 테이블커버</h3>
+    <h5 class="textdecoration1">
+        25,000</h5>
+            <h5> 20,000원</h5>
+
+    <div class="detail">
+    네츄럴한 분위기를 내고 싶을 때, 테이블커버로 변화를 주세요
+    </div>
+
+    <!--주문하기-->
+    <h4>주문하기</h4>
+    <!--입력form-->
+    <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="inputGroup-sizing-default">성함</span>
+        </div>
+        <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+      </div>
+
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="inputGroup-sizing-default">수량</span>
+        </div>
+        <select class="form-control" id="exampleFormControlSelect1">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+      </div>
+
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="inputGroup-sizing-default">주소</span>
+        </div>
+        <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+      </div>
+
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="inputGroup-sizing-default">전화번호</span>
+        </div>
+        <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+
+    </div>
+      <!--버튼-->
+      <div class="button">
+      <a href="#" class="btn btn-primary btn-lg disabled" role="button" aria-disabled="true">주문하기</a>
+    </div>
+
+    </div>
+
   </body>
 </html>

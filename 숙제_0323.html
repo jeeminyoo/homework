@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
 		
-		<!-- Webpage Title -->
+	<!-- Webpage Title -->
     <title>Hello, world!</title>
 
     <!-- Required meta tags -->
@@ -66,24 +66,24 @@
 
     <script>
          function q1() {
-           let txt = $('#input-01').val();
-            if (txt == '') {
+           let name = $('#input-01').val();
+           let address = $('#input-03').val();
+           let mobile = $('#input-04').val();
+
+            if (name == '') {
                 alert("성함을 입력하세요");
-            }
-        }        
-        
-          function q1() {
-            let txt = $('#input-03').val();
-            if (txt == '') {
+                $('#input-01').focus();
+                return;
+            } else if (address == '') {
                 alert("주소를 입력하세요");
+                $('#input-03').focus();
+                return;
+            } else if (mobile == ''){
+                alert("전화번호를 입력하세요")
+                $('#input-04').focus();
+                return;
             }
-          }
-          function q1() {
-            let txt = $('#input-04').val();
-            if (txt == '') {
-                alert("전화번호를 입력하세요");
-            }
-          }
+         }
     </script>
 
   </head>
